@@ -1,0 +1,45 @@
+WEEK 20 PROJECT — TASK 2 DATA INTEGRITY REPORT
+======================================================================
+
+1. MISSING VALUES
+-----------------
+Columns with missing values: 9
+
+- return_date: 91 missing value(s). Decision: keep missing where the source provides no valid value; do not invent data.
+- first_name: 5 missing value(s). Decision: keep missing where the source provides no valid value; do not invent data.
+- last_name: 5 missing value(s). Decision: keep missing where the source provides no valid value; do not invent data.
+- grade: 41 missing value(s). Decision: keep missing where the source provides no valid value; do not invent data.
+- neighborhood: 5 missing value(s). Decision: keep missing where the source provides no valid value; do not invent data.
+- membership_status: 5 missing value(s). Decision: keep missing where the source provides no valid value; do not invent data.
+- join_date: 11 missing value(s). Decision: keep missing where the source provides no valid value; do not invent data.
+- member_total_book_count: 8 missing value(s). Decision: keep missing where the source provides no valid value; do not invent data.
+- publication_year: 35 missing value(s). Decision: keep missing where the source provides no valid value; do not invent data.
+
+2. DUPLICATE RECORDS
+--------------------
+True duplicate records removed: 8
+Similar-looking records were kept unless every field matched and they were genuine duplicates.
+
+3. INCONSISTENT VALUES
+----------------------
+- neighborhood:
+  Variants: ['HELIOPOLIS', 'Heliopolis'] -> unified to a consistent form.
+  Variants: ['Zamalek', 'zamalek'] -> unified to a consistent form.
+  Variants: ['NASR CITY', 'Nasr City'] -> unified to a consistent form.
+- membership_status:
+  Variants: ['Inactive', 'inactive'] -> unified to a consistent form.
+  Variants: ['Active', 'active'] -> unified to a consistent form.
+
+4. RECORDS BELONGING TO NO REGISTERED MEMBER
+---------------------------------------------
+Affected records: 5
+Unmatched member_id values: [1104, 1150, 1201]
+Decision: Keep all unmatched checkout records because they are real source records. Their member information remains missing because there is no registered member record.
+
+FINAL DATASET CHECK
+-------------------
+Rows before cleaning: 417
+Rows after cleaning: 409
+Columns: 19
+Remaining exact duplicate rows: 0
+Output file: task2_cleaned_data.csv

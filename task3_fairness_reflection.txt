@@ -1,0 +1,40 @@
+
+WEEK 20 PROJECT — DATA FAIRNESS REFLECTION
+
+1. BASIS FOR JUDGING UNDER-REPRESENTATION
+
+I compared the number of members with the number of checkouts
+for every neighborhood in the cleaned dataset. I considered a
+neighborhood potentially under-represented when it had a noticeably
+smaller member count and checkout activity compared with the other
+neighborhoods.
+
+2. FINDING
+
+Shubra appears to be the most under-represented neighborhood.
+
+Shubra has 5 members and 34 checkouts.
+
+For comparison:
+Maadi has 20 members and 114 checkouts.
+Nasr City has 16 members and 101 checkouts.
+Heliopolis has 13 members and 87 checkouts.
+Zamalek has 11 members and 68 checkouts.
+
+The comparison shows that Shubra has the smallest number of
+registered members and the smallest checkout count among the
+named neighborhoods in the dataset.
+
+3. PLAUSIBLE REASON
+
+One plausible reason is that fewer students from Shubra may be
+registered in the library program, which would naturally result
+in fewer recorded checkouts from that neighborhood.
+
+4. NEXT STEP
+
+The library could investigate registration and participation in
+Shubra and consider targeted outreach, such as promoting the
+summer reading program through local schools or community
+organizations. The library should then compare participation
+again after the outreach to see whether representation improves.
